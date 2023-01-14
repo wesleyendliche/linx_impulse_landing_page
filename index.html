@@ -14,46 +14,286 @@
         <h1>Uma seleção de produtos</h1>
         <h2>especial para você</h2>
         <p>
-          Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
+          Todos os produtos desta lista foram selecionados a partir da sua
+          navegação. Aproveite!
         </p>
 
         <nav>
-            <ul>
-                <li><button>Conheça a Linx</button></li>
-                <li><button>Ajude o algorítmo</button></li>
-                <li><button>Seus produtos</button></li>
-                <li><button>Compartilhe</button></li>
-            </ul>
+          <ul>
+            <li><button>Conheça a Linx</button></li>
+            <li><button>Ajude o algorítmo</button></li>
+            <li><button>Seus produtos</button></li>
+            <li><button>Compartilhe</button></li>
+          </ul>
         </nav>
       </div>
     </header>
 
     <main>
-        <div class="description">
-            <h3>Ajude o algorítmo a ser mais certeiro</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur possimus cumque architecto corrupti officia dolore consequatur itaque incidunt. Dignissimos commodi totam rem voluptatum nulla officiis sed distinctio maxime, possimus consequuntur deserunt, pariatur consequatur voluptates placeat ipsa nesciunt ipsam! Possimus fugit nisi rerum reprehenderit totam sint cum quas cupiditate non repellendus.</p> <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi est cumque rem, rerum dolores explicabo quisquam ullam neque consequuntur et qui dignissimos deleniti voluptas obcaecati, eligendi illo voluptate excepturi! Quaerat fuga quae modi perspiciatis odit blanditiis. Ullam, quasi. Deserunt laboriosam autem quis culpa error.</p>
-        </div>
+      <div class="description">
+        <h3>Ajude o algorítmo a ser mais certeiro</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          possimus cumque architecto corrupti officia dolore consequatur itaque
+          incidunt. Dignissimos commodi totam rem voluptatum nulla officiis sed
+          distinctio maxime, possimus consequuntur deserunt, pariatur
+          consequatur voluptates placeat ipsa nesciunt ipsam! Possimus fugit
+          nisi rerum reprehenderit totam sint cum quas cupiditate non
+          repellendus.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi
+          est cumque rem, rerum dolores explicabo quisquam ullam neque
+          consequuntur et qui dignissimos deleniti voluptas obcaecati, eligendi
+          illo voluptate excepturi! Quaerat fuga quae modi perspiciatis odit
+          blanditiis. Ullam, quasi. Deserunt laboriosam autem quis culpa error.
+        </p>
+      </div>
 
-        <form>
+      <form>
+        <ul>
+          <li>
             <label for="name">Seu nome: </label>
-            <input type="text" name="name" id="name"> <br>
-
+            <input type="text" name="name" id="name" /> <br />
+          </li>
+          <li>
             <label for="email">E-mail: </label>
-            <input type="email" name="email" id="email"> <br>
-
+            <input type="email" name="email" id="email" /> <br />
+          </li>
+          <li>
             <label for="cpf">Seu nome: </label>
-            <input type="number" name="cpf" id="cpf"> <br>
-
-            <input type="radio" name="male" id="male">
+            <input type="number" name="cpf" id="cpf" /> <br />
+          </li>
+          <li>
+            <input type="radio" name="male" id="male" />
             <label for="male">Masculino</label>
-            
-            <input type="radio" name="female" id="female">
-            <label for="female">Feminino</label> <br>
 
-            <button type="submit">Enviar</button>
-        </form>
+            <input type="radio" name="female" id="female" />
+            <label for="female">Feminino</label> <br />
+          </li>
+        </ul>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="container">
+        <hr />
+        <h3>Sua seleção especial</h3>
+        <hr />
+        <div class="item">
+          <img
+            class="item__img"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            width="200px"
+            height="150px"
+          />
+          <h4 class="item__title">Nome do produto</h4>
+          <p class="item__description">
+            Descrição do produto um pouco maior, com duas ou três linhas, que
+            explica melhor do que se trata.
+          </p>
+          <section class="prices">
+            <ul>
+              <li>De: R$23,99</li>
+              <li class="price__main">Por: R$19,99</li>
+              <li>ou 2x de R$9,99</li>
+            </ul>
+          </section>
+          <button class="btn__purchase">Comprar</button>
+        </div>
+        <div class="item">
+          <img
+            class="item__img"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            width="200px"
+            height="150px"
+          />
+          <h4 class="item__title">Nome do produto</h4>
+          <p class="item__description">
+            Descrição do produto um pouco maior, com duas ou três linhas, que
+            explica melhor do que se trata.
+          </p>
+          <section class="prices">
+            <ul>
+              <li>De: R$23,99</li>
+              <li class="price__main">Por: R$19,99</li>
+              <li>ou 2x de R$9,99</li>
+            </ul>
+          </section>
+          <button class="btn__purchase">Comprar</button>
+        </div>
+        <div class="item">
+          <img
+            class="item__img"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            width="200px"
+            height="150px"
+          />
+          <h4 class="item__title">Nome do produto</h4>
+          <p class="item__description">
+            Descrição do produto um pouco maior, com duas ou três linhas, que
+            explica melhor do que se trata.
+          </p>
+          <section class="prices">
+            <ul>
+              <li>De: R$23,99</li>
+              <li class="price__main">Por: R$19,99</li>
+              <li>ou 2x de R$9,99</li>
+            </ul>
+          </section>
+          <button class="btn__purchase">Comprar</button>
+        </div>
+        <div class="item">
+          <img
+            class="item__img"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            width="200px"
+            height="150px"
+          />
+          <h4 class="item__title">Nome do produto</h4>
+          <p class="item__description">
+            Descrição do produto um pouco maior, com duas ou três linhas, que
+            explica melhor do que se trata.
+          </p>
+          <section class="prices">
+            <ul>
+              <li>De: R$23,99</li>
+              <li class="price__main">Por: R$19,99</li>
+              <li>ou 2x de R$9,99</li>
+            </ul>
+          </section>
+          <button class="btn__purchase">Comprar</button>
+        </div>
+        <div class="item">
+          <img
+            class="item__img"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            width="200px"
+            height="150px"
+          />
+          <h4 class="item__title">Nome do produto</h4>
+          <p class="item__description">
+            Descrição do produto um pouco maior, com duas ou três linhas, que
+            explica melhor do que se trata.
+          </p>
+          <section class="prices">
+            <ul>
+              <li>De: R$23,99</li>
+              <li class="price__main">Por: R$19,99</li>
+              <li>ou 2x de R$9,99</li>
+            </ul>
+          </section>
+          <button class="btn__purchase">Comprar</button>
+        </div>
+        <div class="item">
+          <img
+            class="item__img"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            width="200px"
+            height="150px"
+          />
+          <h4 class="item__title">Nome do produto</h4>
+          <p class="item__description">
+            Descrição do produto um pouco maior, com duas ou três linhas, que
+            explica melhor do que se trata.
+          </p>
+          <section class="prices">
+            <ul>
+              <li>De: R$23,99</li>
+              <li class="price__main">Por: R$19,99</li>
+              <li>ou 2x de R$9,99</li>
+            </ul>
+          </section>
+          <button class="btn__purchase">Comprar</button>
+        </div>
+        <div class="item">
+          <img
+            class="item__img"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            width="200px"
+            height="150px"
+          />
+          <h4 class="item__title">Nome do produto</h4>
+          <p class="item__description">
+            Descrição do produto um pouco maior, com duas ou três linhas, que
+            explica melhor do que se trata.
+          </p>
+          <section class="prices">
+            <ul>
+              <li>De: R$23,99</li>
+              <li class="price__main">Por: R$19,99</li>
+              <li>ou 2x de R$9,99</li>
+            </ul>
+          </section>
+          <button class="btn__purchase">Comprar</button>
+        </div>
+        <div class="item">
+          <img
+            class="item__img"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+            width="200px"
+            height="150px"
+          />
+          <h4 class="item__title">Nome do produto</h4>
+          <p class="item__description">
+            Descrição do produto um pouco maior, com duas ou três linhas, que
+            explica melhor do que se trata.
+          </p>
+          <section class="prices">
+            <ul>
+              <li>De: R$23,99</li>
+              <li class="price__main">Por: R$19,99</li>
+              <li>ou 2x de R$9,99</li>
+            </ul>
+          </section>
+          <button class="btn__purchase">Comprar</button>
+        </div>
+      </div>
+
+      <div id="next">
+        <button id="btn__next">Ainda mais produtos aqui!</button>
+      </div>
     </main>
+
+    <div id="share">
+      <hr />
+    <h3>Compartilhe a novidade</h3>
+    <hr />
+
+    <div>
+      <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+    </div>
+
+    <section>
+      <ul>
+        <li>
+          <label for="friends__name">Nome do seu amigo:</label>
+          <input type="text" name="friends__name" id="friends__name">
+        </li>
+        <li>
+          <label for="friends__email">E-mail:</label>
+          <input type="email" name="friends__email" id="friends__email">
+        </li>
+      </ul>
+
+      <button type="submit">Enviar agora</button>
+    </section>
+    </div>
+    
+    <footer>
+      <p>Desafio de HTML, CSS e JS.</p>
+      <p>Wesley Endliche</p>
+      <p>2023</p>
+    </footer>
 
     <script src="/scripts/main.js"></script>
   </body>
