@@ -1,49 +1,89 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9?styles=49034,49038,49040,49042');          
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-9?styles=49034,49038,49040,49042");
 
 :root {
-    --dark-gray: #707070;
-    --medium-gray: #888888;
+  --dark-gray: #707070;
+  --medium-gray: #888888;
 }
 
 body {
-    background-color: #fff;
-    font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 header {
-    text-align: center;
-    background-color: var(--dark-gray);
-    color: #fff;
-    padding-top: 4.3rem;
-    padding-bottom: 8.75rem;
+  text-align: center;
+  background-color: var(--dark-gray);
+  color: #fff;
+  padding-top: 4.3rem;
+  padding-bottom: 8.75rem;
 }
 
 header h1 {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 header h2 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 header p {
-    font-family: 'Helvetica 35 Thin', sans-serif;
-    font-size: 0.875rem;
+  font-family: "Helvetica 35 Thin", sans-serif;
+  font-size: 0.875rem;
 }
 
 header ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
 }
 
-header ul>li>button {
-    margin-right: 2rem;
-    padding: 16px;
-    font-family: 'Helvetica 35 thin', sans-serif;
-    color: var(--medium-gray);
-    border: 1px solid var(--medium-gray);
-    border-radius: 4px;
+header ul > li > button, button {
+  margin-right: 2rem;
+  padding: 16px;
+  font-family: "Helvetica 35 Thin", sans-serif;
+  color: var(--medium-gray);
+  background-color: #fff;
+  border: 1px solid var(--medium-gray);
+  border-radius: 4px;
+}
+
+main {
+  font-family: "Helvetica 35 Thin", sans-serif;
+}
+
+main .description {
+  display: inline-block;
+  width: 65%;
+}
+
+main form {
+  display: inline-block;
+  position: absolute;
+}
+
+main form ul {
+  display: flex;
+  flex-direction: column;
+}
+
+main form ul li {
+  padding-bottom: 20px;
+}
+
+main form ul li:first-child {
+  padding-top: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    row-gap: 25px;
+}
+
+#next {
+    margin-top: 52px;
+    margin-bottom: 128px;
 }
