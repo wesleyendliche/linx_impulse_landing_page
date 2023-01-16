@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/helvetica-neue-9?styles=49034,49038,49040,49042");
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 :root {
   --dark-gray: #707070;
@@ -7,27 +7,43 @@
 
 body {
   background-color: #fff;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 header {
+  margin-bottom: 30px;
+}
+
+#header-text {
+  position: relative;
   text-align: center;
-  background-color: var(--dark-gray);
   color: #fff;
-  padding-top: 4.3rem;
+  padding-top: 23px;
   padding-bottom: 8.75rem;
+}
+
+#bg-header {
+  position: absolute;
+  top: -175px;
+  left: -20px;
+  width: 1600px;
+  height: 500px;
+  transform: rotate(7deg);
+  background: var(--dark-gray) 0% 0% no-repeat padding-box;
 }
 
 header h1 {
   font-size: 1.25rem;
+  font-weight: 400;
 }
 
 header h2 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 header p {
-  font-family: "Helvetica 35 Thin", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-size: 0.875rem;
 }
 
@@ -39,10 +55,11 @@ header ul {
   padding-top: 50px;
 }
 
-header ul > li > button, button {
+header ul > li > button,
+button {
   margin-right: 2rem;
   padding: 16px;
-  font-family: "Helvetica 35 Thin", sans-serif;
+  font-family: inherit;
   color: var(--medium-gray);
   background-color: #fff;
   border: 1px solid var(--medium-gray);
@@ -50,7 +67,8 @@ header ul > li > button, button {
 }
 
 main {
-  font-family: "Helvetica 35 Thin", sans-serif;
+  font-family: inherit;
+  color: var(--medium-gray);
 }
 
 main .description {
@@ -58,9 +76,19 @@ main .description {
   width: 65%;
 }
 
+.description h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.description p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
 main form {
   display: inline-block;
-  position: absolute;
+  font-size: 12px;
 }
 
 main form ul {
@@ -76,14 +104,23 @@ main form ul li:first-child {
   padding-top: 20px;
 }
 
+main form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 39px;
+  font-size: 16px;
+}
+
 .container {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50% 50%;
-    row-gap: 25px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  row-gap: 25px;
 }
 
 #next {
-    margin-top: 52px;
-    margin-bottom: 128px;
+  margin-top: 52px;
+  margin-bottom: 128px;
 }
